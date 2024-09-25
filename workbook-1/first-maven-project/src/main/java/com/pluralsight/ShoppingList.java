@@ -4,7 +4,17 @@ public class ShoppingList {
 
     public static void main(String[] args) {
         System.out.println(
-                "Milk " + "Juice " + "Yogurt " + "Bread " + "Jam " + "Creamer " + "Coffee " + "Sauce " + "Ketchup " + "Hashbrowns " + "Chicken Broth"
+                "Milk\n" +
+                        "Juice\n" +
+                        "Yogurt\n" +
+                        "Bread\n" +
+                        "Jam\n" +
+                        "Creamer" +
+                        "Coffee\n" +
+                        "Sauce\n" +
+                        "Ketchup\n" +
+                        "Hashbrowns\n" +
+                        "Chicken Broth\n"
         );
 
 }
