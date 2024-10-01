@@ -3,26 +3,34 @@ package com.pluralsight;
 import java.util.*;
 
 public class BasicCalculator {
+
+    static Scanner myScanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner myScanner = new Scanner(System.in);
+        int num1 = numInput("Enter the first number: ");
+        int num2 = numInput("Enter the second number: ");
 
-        System.out.print("Enter thr first number: ");
-        int num1 = myScanner.nextInt();
+        String operation = getOperation("Possible calculations:\n" +
+                "(A)dd\n" +
+                "(S)ubtract\n" +
+                "(M)ultiply\n" +
+                "(D)ivide\n" +
+                "Please select an option: ");
+    }
+    private static int numInput(String message) {
+        System.out.print(message);
+        int output = myScanner.nextInt();
+        myScanner.nextLine();
+        return output;
 
-        System.out.print("Enter the second number: ");
-        int num2 = myScanner.nextInt();
+    }
+    private static String getOperation(String message) {
+        System.out.print(message);
+        return myScanner.nextLine();
+    }
 
-        System.out.println("Possible calculations: ");
-        System.out.println("(A)dd");
-        System.out.println("(S)ubtract");
-        System.out.println("(M)ultiply");
-        System.out.println("(D)ivide");
-        System.out.println("Please select an option: ");
-
-        String inputAnswer = myScanner.next();
-        int result;
-
-        switch(inputAnswer) {
+public static void displayResult(int num1, int num2, int result, String operation) {
+        switch (operation) {
             case "A":
                 result = num1 + num2;
                 System.out.println(num1 + " + " + num2 + " = " + result);
@@ -37,11 +45,10 @@ public class BasicCalculator {
                 break;
             case "D":
                 result = num1 / num2;
-                System.out.println(num1 + " / "  + num2 + " = " + result);
+                System.out.println(num1 + " / " + num2 + " = " + result);
                 break;
 
-        }
-        myScanner.close();
 
+        }
     }
 }
