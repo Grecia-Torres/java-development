@@ -2,13 +2,13 @@ package com.pluralsight.week2;
 
 public class CellPhone {
 
-    private String serialNumber = "";
+    private int serialNumber = 0;
     private String model = "";
     private String carrier = "";
     private String phoneNumber = "";
     private String owner = "";
 
-    public CellPhone(String serialNumber, String model, String carrier, String phoneNumber, String owner) {
+    public CellPhone(int serialNumber, String model, String carrier, String phoneNumber, String owner) {
         this.serialNumber = serialNumber;
         this.model = model;
         this.carrier = carrier;
@@ -19,11 +19,11 @@ public class CellPhone {
     public CellPhone() {
     }
 
-    public String getSerialNumber() {
+    public int getSerialNumber() {
         return serialNumber;
     }
 
-    public void setSerialNumber(String serialNumber) {
+    public void setSerialNumber(int serialNumber) {
         this.serialNumber = serialNumber;
     }
 

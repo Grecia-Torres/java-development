@@ -7,7 +7,7 @@ public class CellPhoneApplication {
     public static void main(String[] args) {
 
         System.out.println("What is the serial number? ");
-        String serialNumber = scanner.nextLine();
+        int serialNumber = Integer.parseInt(scanner.nextLine());
 
         System.out.println("What model is the phone? ");
         String model = scanner.nextLine();
