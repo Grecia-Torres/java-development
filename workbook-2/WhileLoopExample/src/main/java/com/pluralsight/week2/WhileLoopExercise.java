@@ -22,8 +22,8 @@ public class WhileLoopExercise {
     }
 
     public static void exerciseForLoop() {
-        for (int x = 0; x < 20; x += 2) {
-            System.out.println(x);
+        for (int i = 0; i < 20; i += 2) {
+            System.out.println(i);
         }
 
     }
