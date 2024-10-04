@@ -6,6 +6,8 @@ public class CellPhoneApplication {
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 
+
+
         System.out.println("What is the serial number? ");
         int serialNumber = Integer.parseInt(scanner.nextLine());
 
@@ -23,20 +25,33 @@ public class CellPhoneApplication {
 
         CellPhone cellPhone = new CellPhone();
 
+
+        System.out.println("Enter a number to dial: ");
+        String numberToDial = scanner.nextLine();
+        cellPhone.dial(numberToDial);
+
         cellPhone.setSerialNumber(serialNumber);
         cellPhone.setModel(model);
         cellPhone.setCarrier(carrier);
         cellPhone.setPhoneNumber(phoneNumber);
         cellPhone.setOwner(owner);
 
+        System.out.println("\nPhone Details: ");
+        display(cellPhone1);
+        display(cellPhone2);
+
+        cellPhone1.dial(cellPhone2.getPhoneNumber());
+        cellPhone2.dial(cellPhone1.getPhoneNumber());
+
+        scanner.close();;
+
+    }
+    public static void display(cellPhone phone) {
         System.out.println("Serial Number: " + cellPhone.getSerialNumber());
         System.out.println("Model: " + cellPhone.getModel());
         System.out.println("Carrier: " + cellPhone.getCarrier());
         System.out.println("Phone Number: " + cellPhone.getPhoneNumber());
         System.out.println("Owner: " + cellPhone.getOwner());
-
-
-
     }
 
 
