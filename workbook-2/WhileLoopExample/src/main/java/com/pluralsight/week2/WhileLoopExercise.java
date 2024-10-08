@@ -32,10 +32,24 @@ public class WhileLoopExercise {
         String[] vegetables = {"Brocoli", "Spinach", "Yams", "Asparagus", "Beets", "Squash"};
         for (String veggie : vegetables) {
             System.out.println("I love " + veggie +"!");
+
+            int x = 9;
+
+            if (x++ < 10) {
+
+                System.out.println("Low");
+
+            } else {
+
+                System.out.println("High");
+
+            }
+
+        }
         }
 
     }
-}
+
 
 
 
