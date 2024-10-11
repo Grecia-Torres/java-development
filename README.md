@@ -1,12 +1,20 @@
-# java-development
+# **Grecia Torres**
+Grecia.atorres@gmail.com
+I have an extensive academic background that includes advanced mathematics.
+I believe this has only added to my problem-solving skills. I am currently
+advancing those skills through an application development track at Year Up.
 
-## Description
-This will be our first java program for pluralsight.
+## Highlights
+* Java
+* Python
+* CSS
+* Html
 
-## Picture
-![Girl coding](https://www.freepik.com/premium-ai-image/cartoon-girl-with-glasses-working-digital-workstation-surrounded-by-vibrant-data-screens-charts_338982727.htm#fromView=search&page=1&position=32&uuid=978c2f90-e9ee-4fcf-a9fe-17760c452b16)
+## Work Experience
+<p>App Development</p>
+<p>Year Up</p>
+_Aug. 2024-present_
 
 
-## Author
-Grecia - [grecia.atorres@gmail.com](malito:grecia.atorres@gmail.com)
+
 
