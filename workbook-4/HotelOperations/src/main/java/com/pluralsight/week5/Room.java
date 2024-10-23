@@ -45,11 +45,22 @@ public class Room {
         this.dirty = dirty;
     }
     public boolean  isAvailable() {
-        if(!dirty && !occupied) {
+        if (!dirty && !occupied) {
             return true;
         } else {
             return false;
         }
     }
-}
+        public void checkIn() {
+            this.occupied = true;
+            this.dirty = true;
+        }
+        public void checkOut() {
+        this.occupied = false;
+        }
+        public void cleanRoom() {
+            this.dirty = false;
+        }
+    }
+
 

@@ -1,5 +1,8 @@
 package com.pluralsight.week5;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
+
 public class Employee {
     int employeeId;
     String name;
@@ -73,4 +76,10 @@ public class Employee {
                 return hoursWorked - 40;
             }
         }
+        public void punchIn(LocalTime startTime) {
+
+        }
+    }
+    public  double punchOut() {
+    return `
     }
