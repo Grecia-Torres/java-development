@@ -1,4 +1,7 @@
 package com.pluralsight.week7;
 
-public class Dog {
+class Dog extends Mammal {
+    public Dog(String type) {
+        super(type);
+    }
 }

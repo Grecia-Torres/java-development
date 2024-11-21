@@ -1,4 +1,7 @@
 package com.pluralsight.week7;
 
-public class Bird {
+abstract class Bird extends Animal implements Flyable {
+    public Bird(String type) {
+        super(type);
+    }
 }

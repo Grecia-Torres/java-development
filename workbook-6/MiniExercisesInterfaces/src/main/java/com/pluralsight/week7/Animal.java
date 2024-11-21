@@ -1,4 +1,9 @@
 package com.pluralsight.week7;
 
-public class Animal {
+abstract class Animal {
+    String type;
+
+    public Animal(String type) {
+        this.type = type;
+    }
 }

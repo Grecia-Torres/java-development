@@ -1,4 +1,5 @@
 package com.pluralsight.week7;
 
-public class FixedList {
+class FixedList<T> {
+    int maxSize;
 }

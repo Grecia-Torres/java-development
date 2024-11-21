@@ -1,4 +1,7 @@
 package com.pluralsight.week7;
 
-public class Eagle {
+class Eagle extends Bird {
+    public Eagle(String type) {
+        super(type);
+    }
 }
